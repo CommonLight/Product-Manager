@@ -5,7 +5,7 @@ const ProductSchema = new mongoose.Schema({
     title: {type: String,
         required: [true, "Title is required."],
         minLength: [3, "Title must be three or more characters."],
-        maxLength: [30, "Title must be 30 or less characters."]},
+        maxLength: [50, "Title must be 50 or less characters."]},
 
     cost: {type: Number,
         required: [true, "Price is required."],
@@ -15,7 +15,7 @@ const ProductSchema = new mongoose.Schema({
     info: {type: String,
         required: [true, "Information is required."],
         minLength: [10, "More information is required."],
-        maxLength: [100, "Maxiumum information length exceeded."]}
+        maxLength: [1000, "Maxiumum information length exceeded."]}
 
 }, {timestamps: true})
 
